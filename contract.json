@@ -1,0 +1,15 @@
+{
+  "releaseVersion": "1.0.0",
+  "contractVersion": 1,
+  "runtime": {
+    "family": "node",
+    "major": 24
+  },
+  "schema": {
+    "path": "schema/module.schema.json",
+    "url": "https://raw.githubusercontent.com/fabian20ro/shared-api-contract/v1.0.0/schema/module.schema.json",
+    "sha256": "c9754a8e2ea5a59859c4de8fc2421eb4e396385d68844f0deb3e05d31f7a5e8e"
+  },
+  "canonicalOwner": "fabian20ro/shared-api-host",
+  "publicRepository": "fabian20ro/shared-api-contract"
+}

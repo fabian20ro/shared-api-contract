@@ -1,0 +1,54 @@
+{
+  "$schema": "https://raw.githubusercontent.com/fabian20ro/shared-api-contract/v1.0.0/schema/module.schema.json",
+  "schemaVersion": 1,
+  "id": "propozitii",
+  "contractVersion": 1,
+  "runtime": {
+    "family": "node",
+    "major": 24
+  },
+  "build": {
+    "entry": "src/index.ts",
+    "export": "createHandler",
+    "output": "dist/index.js"
+  },
+  "routes": [
+    {
+      "path": "/api/all",
+      "methods": [
+        "GET",
+        "OPTIONS"
+      ],
+      "response": "json"
+    }
+  ],
+  "config": [
+    {
+      "name": "SUPABASE_URL",
+      "type": "string",
+      "required": true,
+      "sensitive": false
+    },
+    {
+      "name": "SUPABASE_PUBLISHABLE_KEY",
+      "type": "string",
+      "required": true,
+      "sensitive": true
+    },
+    {
+      "name": "ALLOWED_ORIGINS",
+      "type": "string[]",
+      "required": true,
+      "sensitive": false
+    },
+    {
+      "name": "GENERATOR_TIMEOUT_MS",
+      "type": "integer",
+      "required": false,
+      "sensitive": false
+    }
+  ],
+  "contracts": {
+    "fixtureDirectory": "test/fixtures"
+  }
+}
