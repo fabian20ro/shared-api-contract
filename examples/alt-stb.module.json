@@ -1,11 +1,12 @@
 {
-  "$schema": "https://raw.githubusercontent.com/fabian20ro/shared-api-contract/v1.0.1/schema/module.schema.json",
-  "schemaVersion": 1,
+  "$schema": "https://raw.githubusercontent.com/fabian20ro/shared-api-contract/v2.0.0/schema/module.schema.json",
+  "schemaVersion": 2,
   "id": "alt-stb",
-  "contractVersion": 1,
+  "contractVersion": 2,
   "runtime": {
-    "family": "node",
-    "major": 24
+    "abi": "web-fetch-v1",
+    "profiles": ["node-24", "web-worker"],
+    "capabilities": ["outbound-fetch", "abort-signal", "binary-response"]
   },
   "build": {
     "entry": "src/index.ts",
@@ -40,6 +41,12 @@
       "type": "string[]",
       "required": true,
       "sensitive": false
+    }
+  ],
+  "dependencies": [
+    {
+      "id": "stb-api",
+      "kind": "http-api"
     }
   ],
   "contracts": {

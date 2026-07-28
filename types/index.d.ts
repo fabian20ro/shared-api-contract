@@ -1,3 +1,10 @@
+export type RuntimeProfile = "node-24" | "web-worker";
+export type RuntimeCapability =
+  | "outbound-fetch"
+  | "abort-signal"
+  | "web-crypto"
+  | "binary-response";
+
 export type FetchHandler = (request: Request) => Promise<Response>;
 
 export interface ScopedLogger {

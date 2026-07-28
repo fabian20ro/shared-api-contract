@@ -2,8 +2,8 @@
 
 Public, versioned contract for API modules consumed by the private shared-api-host control plane.
 
-Current release: **v1.0.1**  
-Contract ABI: **1**
+Current release: **v2.0.0**
+Contract ABI: **2**
 
 ## Use this repository
 
@@ -23,9 +23,9 @@ Pin the schema:
 
 ~~~json
 {
-  "$schema": "https://raw.githubusercontent.com/fabian20ro/shared-api-contract/v1.0.1/schema/module.schema.json",
-  "schemaVersion": 1,
-  "contractVersion": 1
+  "$schema": "https://raw.githubusercontent.com/fabian20ro/shared-api-contract/v2.0.0/schema/module.schema.json",
+  "schemaVersion": 2,
+  "contractVersion": 2
 }
 ~~~
 

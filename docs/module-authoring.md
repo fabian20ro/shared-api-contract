@@ -3,7 +3,7 @@
 This document defines how a public application repository contributes an API to shared-api-host.
 
 Public distribution: https://github.com/fabian20ro/shared-api-contract
-Current contract release: v1.0.1
+Current contract release: v2.0.0
 
 Human-facing documentation may follow main. Module manifests and CI must pin an immutable release tag.
 
@@ -53,13 +53,15 @@ export function createHandler(
 ): FetchHandler;
 ~~~
 
-The host validates the manifest and adapts this handler to Render Node and Vercel Functions.
+The host validates the manifest and adapts this handler to Render Node, Vercel Functions and Cloudflare Module Workers.
 
 ## Module rules
 
 Required:
 
 - Web-standard Request and Response boundary.
+- Declare only runtime profiles actually verified by the module.
+- A `web-worker` module uses no Node built-ins or global `process`.
 - Deterministic import with no network/filesystem side effects.
 - Configuration passed only through createHandler.
 - Dependencies injected where behavior differs by provider or test.
@@ -85,13 +87,14 @@ Example:
 
 ~~~json
 {
-  "$schema": "https://raw.githubusercontent.com/fabian20ro/shared-api-contract/v1.0.1/schema/module.schema.json",
-  "schemaVersion": 1,
+  "$schema": "https://raw.githubusercontent.com/fabian20ro/shared-api-contract/v2.0.0/schema/module.schema.json",
+  "schemaVersion": 2,
   "id": "alt-stb",
-  "contractVersion": 1,
+  "contractVersion": 2,
   "runtime": {
-    "family": "node",
-    "major": 24
+    "abi": "web-fetch-v1",
+    "profiles": ["node-24", "web-worker"],
+    "capabilities": ["outbound-fetch", "abort-signal", "binary-response"]
   },
   "build": {
     "entry": "src/index.ts",

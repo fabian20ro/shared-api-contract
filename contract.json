@@ -1,14 +1,14 @@
 {
-  "releaseVersion": "1.0.1",
-  "contractVersion": 1,
+  "releaseVersion": "2.0.0",
+  "contractVersion": 2,
   "runtime": {
-    "family": "node",
-    "major": 24
+    "abi": "web-fetch-v1",
+    "profiles": ["node-24", "web-worker"]
   },
   "schema": {
     "path": "schema/module.schema.json",
-    "url": "https://raw.githubusercontent.com/fabian20ro/shared-api-contract/v1.0.1/schema/module.schema.json",
-    "sha256": "7c3ad6d9e7285060e17e3588424b96b501047202de93f809759e8efa830c2301"
+    "url": "https://raw.githubusercontent.com/fabian20ro/shared-api-contract/v2.0.0/schema/module.schema.json",
+    "sha256": "43fbbd0df3ad75a9c4d77a89c1950a92be146a5f26f02603e236f74044193408"
   },
   "canonicalOwner": "fabian20ro/shared-api-host",
   "publicRepository": "fabian20ro/shared-api-contract"

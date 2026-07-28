@@ -9,6 +9,8 @@ Backward-compatible documentation and validation improvements may publish a new 
 
 A change that requires existing modules to change their handler ABI, manifest shape or behavior increments contractVersion and publishes a new major release.
 
+Contract v2 keeps the Web `Request` → `Response` factory ABI and replaces the Node-only runtime declaration with explicit `node-24` and `web-worker` profiles plus capability declarations.
+
 ## Consumer rules
 
 - Pin an immutable release tag in $schema.

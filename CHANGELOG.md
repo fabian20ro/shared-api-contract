@@ -1,5 +1,12 @@
 # Changelog
 
+## v2.0.0 — 2026-07-29
+
+- Replaced the Node-only runtime declaration with `web-fetch-v1`.
+- Added explicit `node-24` and `web-worker` profiles.
+- Added portable capability and external-dependency declarations.
+- Kept provider configuration outside public manifests.
+
 ## v1.0.1 — 2026-07-29
 
 - Corrected the schema $id to the immutable public raw URL.
