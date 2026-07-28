@@ -3,7 +3,7 @@
 This document defines how a public application repository contributes an API to shared-api-host.
 
 Public distribution: https://github.com/fabian20ro/shared-api-contract
-Current contract release: v1.0.0
+Current contract release: v1.0.1
 
 Human-facing documentation may follow main. Module manifests and CI must pin an immutable release tag.
 
@@ -85,7 +85,7 @@ Example:
 
 ~~~json
 {
-  "$schema": "https://raw.githubusercontent.com/fabian20ro/shared-api-contract/v1.0.0/schema/module.schema.json",
+  "$schema": "https://raw.githubusercontent.com/fabian20ro/shared-api-contract/v1.0.1/schema/module.schema.json",
   "schemaVersion": 1,
   "id": "alt-stb",
   "contractVersion": 1,

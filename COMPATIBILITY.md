@@ -2,7 +2,7 @@
 
 ## Version axes
 
-- Release version: semantic tag such as v1.0.0 for documentation/schema publication.
+- Release version: semantic tag such as v1.0.1 for documentation/schema publication.
 - contractVersion: integer ABI boundary carried by module.json.
 
 Backward-compatible documentation and validation improvements may publish a new v1.x.y release while contractVersion remains 1.

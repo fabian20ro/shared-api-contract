@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://github.com/fabian20ro/shared-api-host/blob/main/contracts/module.schema.v1.json",
+  "$id": "https://raw.githubusercontent.com/fabian20ro/shared-api-contract/v1.0.1/schema/module.schema.json",
   "title": "Shared API module manifest v1",
   "type": "object",
   "additionalProperties": false,

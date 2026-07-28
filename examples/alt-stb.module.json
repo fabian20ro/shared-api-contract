@@ -1,5 +1,5 @@
 {
-  "$schema": "https://raw.githubusercontent.com/fabian20ro/shared-api-contract/v1.0.0/schema/module.schema.json",
+  "$schema": "https://raw.githubusercontent.com/fabian20ro/shared-api-contract/v1.0.1/schema/module.schema.json",
   "schemaVersion": 1,
   "id": "alt-stb",
   "contractVersion": 1,
